@@ -36,6 +36,7 @@ def insert_user(user_data: UserSchema):
     conn.write(data)
     return Response(status_code=HTTP_201_CREATED)
 
+
 @app.put("/api/update/{id}, status_code=HTTP_204_NO_CONTENT)")
 def update_user(id: int, user_data: UserSchema):
     data = user_data.dict()

@@ -15,7 +15,7 @@ Este proyecto es una API REST construida con **FastAPI** y utiliza **PostgreSQL*
    python -m venv venv
    source venv/Scripts/activate  # En Windows
    ```
-
+   
 2. **Instala las dependencias:**
    ```sh
    pip install fastapi psycopg-binary uvicorn autopep8
