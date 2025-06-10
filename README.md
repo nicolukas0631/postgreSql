@@ -20,7 +20,7 @@ Este proyecto es una API REST construida con **FastAPI** y utiliza **PostgreSQL*
    ```sh
    pip install fastapi psycopg-binary uvicorn autopep8
    ```
-   
+
 3. **Configura la base de datos:**
    - Crea una base de datos llamada `Fast_api` en PostgreSQL.
    - Crea la tabla `users`:
@@ -43,6 +43,8 @@ uvicorn main:app --reload
 ```
 
 La API estará disponible en [http://localhost:8000](http://localhost:8000).
+
+La API para utilizar las funciones esta disponible en [http://localhost:8000/docs](http://localhost:8000/docs).
 
 
 ## Notas
