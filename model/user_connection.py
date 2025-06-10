@@ -42,5 +42,6 @@ class UserConnection():
             cursor.execute("DELETE FROM users WHERE id = %s", (id,))
         self.conn.commit()
 
+
     def __del__(self):
         self.conn.close()
