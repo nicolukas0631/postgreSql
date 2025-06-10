@@ -17,6 +17,7 @@ def root():
         items.append(dict_data)
     return items
 
+
 @app.get("/api/user/{id}, status_code=HTTP_200_OK)")
 def get_user(id: int):
     data = conn.read_by_id(id)
@@ -27,6 +28,7 @@ def get_user(id: int):
             "phone": data[2]
         }
     return {"error": "User not found"}, 404
+
 
 @app.post("/api/insert, status_code=HTTP_201_CREATED)")
 def insert_user(user_data: UserSchema):
